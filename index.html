@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta property="og:type" content="website" />
 <meta property="og:title" content="3TX للمواقع الإلكترونية ✦ صمّم حضورك الرقمي" />
 <meta property="og:description" content="نحوّل أفكارك إلى مواقـع إلكترونية احترافية تبرز بين المنافسين وتُعبّر عن هويتك." />
-
 <meta property="og:image" content="https://nd63txd.vercel.app/cover.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="3TX للمواقع الإلكترونية" />
 <meta name="twitter:description" content="تصميم وبناء مواقع إلكترونية عصرية متوافقة مع جميع الشاشات." />
-<meta name="twitter:image" content="https://nd63txd.vercel.app/cover.jpg" />    --purple-deep:    #1a0533;
+<meta name="twitter:image" content="https://nd63txd.vercel.app/cover.jpg" />
+<title>3TX | تصميم مواقع احترافية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+    :root {
+      --purple-deep:    #1a0533;
       --purple-dark:    #2d0a52;
       --purple-mid:     #6b21a8;
       --purple-bright:  #9333ea;
@@ -79,6 +84,7 @@
       background: rgba(26,5,51,0.7);
       backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--glass-border);
+      transition: background 0.3s;
     }
     .logo {
       font-family: 'Tajawal', sans-serif;
@@ -86,7 +92,6 @@
       background: linear-gradient(135deg, var(--purple-light), var(--purple-glow), var(--accent-pink));
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       letter-spacing: 2px;
-      text-shadow: none;
     }
     .logo span { color: var(--accent-gold); -webkit-text-fill-color: var(--accent-gold); }
     nav ul { list-style: none; display: flex; gap: 2rem; }
@@ -433,7 +438,7 @@
 
     /* ── STATS ── */
     .stats-bar {
-      max-width: 900px; margin: 5rem auto;
+      max-width: 900px; margin: 0 auto 3rem auto;
       display: flex; flex-wrap: wrap;
       align-items: center; justify-content: center;
       gap: 0;
@@ -445,6 +450,9 @@
       border-right: 1px solid var(--glass-border);
     }
     .stat-item:last-child { border-right: none; }
+    @media (max-width: 768px) {
+      .stat-item { border-right: none; border-bottom: 1px solid var(--glass-border); }
+    }
     .stat-num {
       font-family: 'Tajawal', sans-serif;
       font-size: 3rem; font-weight: 900;
@@ -584,7 +592,6 @@
       nav ul { display: none; }
       .about-grid { grid-template-columns: 1fr; }
       .about-visual { height: 280px; }
-      .stat-item { border-right: none; border-bottom: 1px solid var(--glass-border); }
       .birthday-card { padding: 3rem 1.5rem; }
       .contact-box { padding: 3rem 1.5rem; }
     }
@@ -593,7 +600,6 @@
 <body>
 
 <div class="bg-mesh"></div>
-
 <div class="particles" id="particles"></div>
 
 <nav>
@@ -608,157 +614,62 @@
 </nav>
 
 <div class="wrapper">
-
   <section class="hero" id="home">
     <div class="hero-badge">✦ وكالة مواقع إلكترونية متخصصة</div>
     <h1>
       <div class="line1">صمّم حضورك</div>
       <div class="line2">الرقمي معنا ✦</div>
     </h1>
-    <p>
-      نحوّل أفكارك إلى مواقع إلكترونية احترافية تبرز بين المنافسين
-      وتُعبّر عن هويتك بأعلى مستويات التصميم والجودة.
-    </p>
+    <p>نحوّل أفكارك إلى مواقع إلكترونية احترافية تبرز بين المنافسين وتُعبّر عن هويتك بأعلى مستويات التصميم والجودة.</p>
     <div class="hero-cta">
-      <a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-primary">
-        <span>🌐 اطلب موقعك الآن</span>
-      </a>
+      <a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-primary"><span>🌐 اطلب موقعك الآن</span></a>
       <a href="#about" class="btn-secondary">تعرّف علينا ↓</a>
     </div>
     <div class="scroll-hint">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M12 5v14M5 12l7 7 7-7"/>
-      </svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
       تمرير
     </div>
   </section>
 
   <div class="stats-bar reveal">
-    <div class="stat-item">
-      <div class="stat-num">+50</div>
-      <div class="stat-label">موقع منجز</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">100%</div>
-      <div class="stat-label">رضا العملاء</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">24h</div>
-      <div class="stat-label">وقت الاستجابة</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">3X</div>
-      <div class="stat-label">جودة متضاعفة</div>
-    </div>
+    <div class="stat-item"><div class="stat-num">+50</div><div class="stat-label">موقع منجز</div></div>
+    <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">رضا العملاء</div></div>
+    <div class="stat-item"><div class="stat-num">24h</div><div class="stat-label">وقت الاستجابة</div></div>
+    <div class="stat-item"><div class="stat-num">3X</div><div class="stat-label">جودة متضاعفة</div></div>
   </div>
-
   <div class="glow-divider"></div>
 
   <section id="websites">
-    <div class="section-header reveal">
-      <div class="section-tag">🌐 خدماتنا</div>
-      <h2 class="section-title">مواقع إلكترونية احترافية</h2>
-      <p class="section-sub">نبني لك موقعاً يعكس قوة علامتك التجارية ويجذب عملاءك</p>
-    </div>
-
+    <div class="section-header reveal"><div class="section-tag">🌐 خدماتنا</div><h2 class="section-title">مواقع إلكترونية احترافية</h2><p class="section-sub">نبني لك موقعاً يعكس قوة علامتك التجارية ويجذب عملاءك</p></div>
     <div class="card-grid">
-      <div class="service-card reveal">
-        <div class="card-icon">🛍️</div>
-        <h3>متجر إلكتروني</h3>
-        <p>متجر احترافي بواجهة سلسة، بوابات دفع، وإدارة منتجات متكاملة لتنمية أعمالك.</p>
-        <a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-primary">
-          <span>اطلب الآن</span>
-        </a>
-      </div>
-      <div class="service-card reveal">
-        <div class="card-icon">🏢</div>
-        <h3>موقع شركة</h3>
-        <p>موقع مؤسسي يُقدّم خدماتك بأسلوب راقٍ ويبني ثقة عملائك من اللحظة الأولى.</p>
-        <a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-primary">
-          <span>اطلب الآن</span>
-        </a>
-      </div>
-      <div class="service-card reveal">
-        <div class="card-icon">🎨</div>
-        <h3>موقع إبداعي</h3>
-        <p>تصاميم فريدة تناسب الفنانين والمصورين وأصحاب الأعمال الإبداعية.</p>
-        <a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-primary">
-          <span>اطلب الآن</span>
-        </a>
-      </div>
+      <div class="service-card reveal"><div class="card-icon">🛍️</div><h3>متجر إلكتروني</h3><p>متجر احترافي بواجهة سلسة، بوابات دفع، وإدارة منتجات متكاملة لتنمية أعمالك.</p><a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-primary"><span>اطلب الآن</span></a></div>
+      <div class="service-card reveal"><div class="card-icon">🏢</div><h3>موقع شركة</h3><p>موقع مؤسسي يُقدّم خدماتك بأسلوب راقٍ ويبني ثقة عملائك من اللحظة الأولى.</p><a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-primary"><span>اطلب الآن</span></a></div>
+      <div class="service-card reveal"><div class="card-icon">🎨</div><h3>موقع إبداعي</h3><p>تصاميم فريدة تناسب الفنانين والمصورين وأصحاب الأعمال الإبداعية.</p><a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-primary"><span>اطلب الآن</span></a></div>
     </div>
   </section>
-
   <div class="glow-divider"></div>
 
   <section id="birthday">
-    <div class="section-header reveal">
-      <div class="section-tag">🎉 مناسبات</div>
-      <h2 class="section-title">صفحات أعياد الميلاد</h2>
-      <p class="section-sub">اجعل لحظاتك الخاصة أكثر تميزاً مع صفحة مخصصة لعيد الميلاد</p>
-    </div>
-
+    <div class="section-header reveal"><div class="section-tag">🎉 مناسبات</div><h2 class="section-title">صفحات أعياد الميلاد</h2><p class="section-sub">اجعل لحظاتك الخاصة أكثر تميزاً مع صفحة مخصصة لعيد الميلاد</p></div>
     <div class="birthday-card reveal">
       <div class="birthday-emojis">🎂 🎊 🎁 ✨</div>
       <h2>هدية رقمية لا تُنسى</h2>
-      <p>
-        نصمم لك صفحة عيد ميلاد تفاعلية مميزة تحمل رسالتك ولحظاتك الجميلة،
-        مع موسيقى، صور، وتأثيرات بصرية ساحرة تجعل المناسبة أبهى وأجمل.
-      </p>
-      <div class="birthday-features">
-        <span class="feature-chip">✨ تصميم حصري</span>
-        <span class="feature-chip">🎵 موسيقى مخصصة</span>
-        <span class="feature-chip">📸 معرض صور</span>
-        <span class="feature-chip">🎈 تأثيرات متحركة</span>
-        <span class="feature-chip">💌 رسائل شخصية</span>
-        <span class="feature-chip">🔗 رابط قابل للمشاركة</span>
-      </div>
-      <a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-birthday">
-        🎉 احجز الآن
-      </a>
+      <p>نصمم لك صفحة عيد ميلاد تفاعلية مميزة تحمل رسالتك ولحظاتك الجميلة، مع موسيقى، صور، وتأثيرات بصرية ساحرة تجعل المناسبة أبهى وأجمل.</p>
+      <div class="birthday-features"><span class="feature-chip">✨ تصميم حصري</span><span class="feature-chip">🎵 موسيقى مخصصة</span><span class="feature-chip">📸 معرض صور</span><span class="feature-chip">🎈 تأثيرات متحركة</span><span class="feature-chip">💌 رسائل شخصية</span><span class="feature-chip">🔗 رابط قابل للمشاركة</span></div>
+      <a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-birthday">🎉 احجز الآن</a>
     </div>
   </section>
-
   <div class="glow-divider"></div>
 
   <section id="why">
-    <div class="section-header reveal">
-      <div class="section-tag">💎 مميزاتنا</div>
-      <h2 class="section-title">لماذا تختار 3TX؟</h2>
-      <p class="section-sub">نقدم تجربة متكاملة تجمع الجودة والسرعة والإبداع</p>
-    </div>
-
+    <div class="section-header reveal"><div class="section-tag">💎 مميزاتنا</div><h2 class="section-title">لماذا تختار 3TX؟</h2><p class="section-sub">نقدم تجربة متكاملة تجمع الجودة والسرعة والإبداع</p></div>
     <div class="features-grid">
-      <div class="feature-box reveal">
-        <div class="f-icon">⚡</div>
-        <h4>تسليم سريع</h4>
-        <p>نلتزم بالمواعيد ونسلّم مشروعك في الوقت المحدد دون أي تأخير.</p>
-      </div>
-      <div class="feature-box reveal">
-        <div class="f-icon">🎨</div>
-        <h4>تصميم احترافي</h4>
-        <p>تصاميم عصرية بمعايير عالمية تعكس هويتك وتجذب جمهورك.</p>
-      </div>
-      <div class="feature-box reveal">
-        <div class="f-icon">📱</div>
-        <h4>متوافق مع الجوال</h4>
-        <p>مواقعنا تعمل بكفاءة عالية على جميع الأجهزة والشاشات.</p>
-      </div>
-      <div class="feature-box reveal">
-        <div class="f-icon">🔒</div>
-        <h4>آمن وموثوق</h4>
-        <p>حماية متكاملة لموقعك وبياناتك مع شهادة SSL وأفضل الممارسات.</p>
-      </div>
-      <div class="feature-box reveal">
-        <div class="f-icon">🚀</div>
-        <h4>أداء عالي</h4>
-        <p>مواقع سريعة التحميل محسّنة لمحركات البحث لتصل لأكبر شريحة.</p>
-      </div>
-      <div class="feature-box reveal">
-        <div class="f-icon">🤝</div>
-        <h4>دعم مستمر</h4>
-        <p>فريقنا متاح لمساعدتك وحل أي استفسار بعد إطلاق موقعك.</p>
-      </div>
+      <div class="feature-box reveal"><div class="f-icon">⚡</div><h4>تسليم سريع</h4><p>نلتزم بالمواعيد ونسلّم مشروعك في الوقت المحدد دون أي تأخير.</p></div>
+      <div class="feature-box reveal"><div class="f-icon">🎨</div><h4>تصميم احترافي</h4><p>تصاميم عصرية بمعايير عالمية تعكس هويتك وتجذب جمهورك.</p></div>
+      <div class="feature-box reveal"><div class="f-icon">📱</div><h4>متوافق مع الجوال</h4><p>مواقعنا تعمل بكفاءة عالية على جميع الأجهزة والشاشات.</p></div>
+      <div class="feature-box reveal"><div class="f-icon">🔒</div><h4>آمن وموثوق</h4><p>حماية متكاملة لموقعك وبياناتك مع شهادة SSL وأفضل الممارسات.</p></div>
+      <div class="feature-box reveal"><div class="f-icon">🚀</div><h4>أداء عالي</h4><p>مواقع سريعة التحميل محسّنة لمحركات البحث لتصل لأكبر شريحة.</p></div>
+      <div class="feature-box reveal"><div class="f-icon">🤝</div><h4>دعم مستمر</h4><p>فريقنا متاح لمساعدتك وحل أي استفسار بعد إطلاق موقعك.</p></div>
     </div>
   </section>
 
@@ -767,30 +678,14 @@
       <div class="about-text reveal">
         <div class="section-tag">عن الشركة</div>
         <h2>نحن 3TX للمواقع الإلكترونية</h2>
-        <p>
-          فريق متخصص في بناء المواقع الإلكترونية الاحترافية بأعلى معايير الجودة والإبداع.
-          نؤمن بأن كل مشروع هو فرصة لصنع شيء استثنائي يُحدث فارقاً حقيقياً.
-        </p>
-        <p>
-          من المتاجر الإلكترونية إلى صفحات الهبوط, ومن مواقع الشركات إلى صفحات المناسبات الخاصة —
-          نحول رؤيتك إلى واقع رقمي مبهر.
-        </p>
-        <p>
-          سواء كنت بداية مشروعك أو تريد تجديد حضورك الرقمي، نحن هنا
-          لنمنحك موقعاً يتحدث عنك بثقة واحتراف.
-        </p>
-        <br/>
-        <a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-primary">
-          <span>📩 تواصل معنا على إنستغرام</span>
-        </a>
+        <p>فريق متخصص في بناء المواقع الإلكترونية الاحترافية بأعلى معايير الجودة والإبداع. نؤمن بأن كل مشروع هو فرصة لصنع شيء استثنائي يُحدث فارقاً حقيقياً.</p>
+        <p>من المتاجر الإلكترونية إلى صفحات الهبوط, ومن مواقع الشركات إلى صفحات المناسبات الخاصة — نحول رؤيتك إلى واقع رقمي مبهر.</p>
+        <p>سواء كنت بداية مشروعك أو تريد تجديد حضورك الرقمي، نحن هنا لنمنحك موقعاً يتحدث عنك بثقة واحتراف.</p><br/>
+        <a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-primary"><span>📩 تواصل معنا على إنستغرام</span></a>
       </div>
       <div class="about-visual reveal">
-        <div class="visual-ring ring1">
-          <div class="ring-dot" style="top:-5px;left:50%;transform:translateX(-50%)"></div>
-        </div>
-        <div class="visual-ring ring2">
-          <div class="ring-dot" style="bottom:-5px;left:50%;transform:translateX(-50%)"></div>
-        </div>
+        <div class="visual-ring ring1"><div class="ring-dot" style="top:-5px;left:50%;transform:translateX(-50%)"></div></div>
+        <div class="visual-ring ring2"><div class="ring-dot" style="bottom:-5px;left:50%;transform:translateX(-50%)"></div></div>
         <div class="visual-ring ring3"></div>
         <div class="visual-center">🌐</div>
       </div>
@@ -800,60 +695,54 @@
   <section id="contact">
     <div class="contact-box reveal">
       <h2>🚀 ابدأ مشروعك اليوم</h2>
-      <p>
-        لا تؤجل حلمك الرقمي — تواصل معنا الآن وسنساعدك في تحويل فكرتك
-        إلى موقع إلكتروني احترافي يميزك عن الجميع.
-      </p>
+      <p>لا تؤجل حلمك الرقمي — تواصل معنا الآن وسنساعدك في تحويل فكرتك إلى موقع إلكتروني احترافي يميزك عن الجميع.</p>
       <div class="contact-btns">
-        <a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-primary">
-          <span>🌐 اطلب موقعك الآن</span>
-        </a>
-        <a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-birthday">
-          🎉 احجز عيد ميلادك
-        </a>
+        <a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-primary"><span>🌐 اطلب موقعك الآن</span></a>
+        <a href="https://www.instagram.com/4.2nr?igsh=djE3bm54ODY4MnFt" target="_blank" class="btn-birthday">🎉 احجز عيد ميلادك</a>
       </div>
     </div>
   </section>
 
-  <footer>
-    <p>جميع الحقوق محفوظة © 2026 — <strong>3TX للمواقع الإلكترونية</strong></p>
-  </footer>
+  <footer><p>جميع الحقوق محفوظة © 2026 — <strong>3TX للمواقع الإلكترونية</strong></p></footer>
+</div>
 
-</div><script>
-  /* ── PARTICLES ── */
-  const container = document.getElementById('particles');
-  const colors = ['#9333ea','#a855f7','#d8b4fe','#e879f9','#f0c040'];
-  for (let i = 0; i < 35; i++) {
-    const p = document.createElement('div');
-    p.className = 'particle';
-    const size = Math.random() * 5 + 2;
-    p.style.cssText = `
-      width:${size}px; height:${size}px;
-      left:${Math.random()*100}%;
-      background:${colors[Math.floor(Math.random()*colors.length)]};
-      animation-duration:${Math.random()*15+10}s;
-      animation-delay:${Math.random()*15}s;
-      box-shadow: 0 0 ${size*3}px currentColor;
-    `;
-    container.appendChild(p);
-  }
+<script>
+  (function() {
+    const container = document.getElementById('particles');
+    if(container) {
+      const colors = ['#9333ea','#a855f7','#d8b4fe','#e879f9','#f0c040'];
+      for (let i = 0; i < 35; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle';
+        const size = Math.random() * 5 + 2;
+        p.style.cssText = `
+          width:${size}px; height:${size}px;
+          left:${Math.random()*100}%;
+          background:${colors[Math.floor(Math.random()*colors.length)]};
+          animation-duration:${Math.random()*15+10}s;
+          animation-delay:${Math.random()*15}s;
+          box-shadow: 0 0 ${size*3}px currentColor;
+        `;
+        container.appendChild(p);
+      }
+    }
 
-  /* ── SCROLL REVEAL ── */
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('visible'), i * 80);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (nav) {
+        nav.style.background = window.scrollY > 60 ? 'rgba(26,5,51,0.95)' : 'rgba(26,5,51,0.7)';
       }
     });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-  /* ── NAVBAR SCROLL ── */
-  window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    nav.style.background = window.scrollY > 60
-      ? 'rgba(26,5,51,0.95)' : 'rgba(26,5,51,0.7)';
-  });
+  })();
 </script>
 </body>
 </html>
